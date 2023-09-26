@@ -44,7 +44,13 @@ function setAnalogClockHands() {
     document.querySelector('.seconds-hand')
         .style.transform = `rotate(${secondsDegreeAngle}deg)`;
 
+    hours = hours % 12;
+    hours = hours ? hours : 12
     document.querySelector('.digital-clock-wrapper .hours').textContent = hours;
     document.querySelector('.digital-clock-wrapper .minutes').textContent = minutes;
-    document.querySelector('.digital-clock-wrapper .seconds').textContent = seconds;
+    document.querySelector('.digital-clock-wrapper .seconds').textContent = seconds < 10 ? 0 +''+ seconds : seconds;
+    document.querySelector('.digital-clock-wrapper .am-pm').textContent = hours > 12 ? 'PM' : 'AM';
+
+    document.querySelector('.digital-clock-wrapper .date')
+        .textContent = `${date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear()}`
 }

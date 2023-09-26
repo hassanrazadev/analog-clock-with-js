@@ -13,6 +13,8 @@ Welcome to the Analog Clock JavaScript Project repository! This project is a sim
 - **Smooth Animation:** The clock hands smoothly move to show the time transition, providing a pleasant user experience.
 - **Customizable Design:** You can easily customize the clock's appearance by adjusting the CSS styles.
 - **Responsive:** The clock is responsive and works well on various screen sizes, from desktop to mobile devices.
+- **Date:** The clock will display current date in DD/MM/YYYY format
+- **Digital Clock:** The clock will display a 12 hours digital clock.
 
 ## Getting Started
 
