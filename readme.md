@@ -31,6 +31,6 @@ You can clone this repository to your local machine and open the `index.html` fi
 
 ## Contributions
 Contributions are welcome! If you'd like to enhance the clock or fix issues, please open a pull request.
-License
 
-This project is licensed under the [MIT License](https://chat.openai.com/c/LICENSE).
+## License
+This project is licensed under the [MIT License](LICENSE.txt).
