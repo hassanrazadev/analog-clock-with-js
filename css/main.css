@@ -19,21 +19,20 @@
 
 .analog-clock {
     position: relative;
-    display: inline-block;
+    display: flex;
     width: 400px;
     height: 400px;
+    justify-content: center;
+    align-items: center;
     border: 10px solid chocolate;
     border-radius: 50%;
 }
 
 .analog-clock .clock-center-circle {
-    position: absolute;
     width: 40px;
     height: 40px;
     background-color: darkred;
     border-radius: 50%;
-    left: calc(50% - 20px);
-    top: calc(50% - 20px);
     z-index: 1;
 }
 
@@ -41,14 +40,14 @@
     border: 3px solid brown;
     background-color: brown;
     position: absolute;
-    top: calc(50% - 4px);
-    left: 50%;
+    top: calc(50% - 2px);
+    left: calc(51% - 4px);
 }
 
 .analog-clock .hours-hand {
     width: 100px;
     border-width: 6px;
-    top: calc(50% - 7px);
+    top: calc(50% - 6px);
     transform-origin: left center;
     transform: rotate(-90deg);
 }
@@ -56,7 +55,7 @@
 .analog-clock .minutes-hand {
     width: 140px;
     border-width: 4px;
-    top: calc(50% - 6px);
+    top: calc(50% - 5px);
     transform-origin: left center;
     transform: rotate(-90deg);
 }
@@ -84,28 +83,28 @@
 }
 
 .analog-clock .clock-digits.digit-11 {
-    left: calc(27% - 6px);
-    top: 25px;
+    left: calc(27% - 2px);
+    top: 20px;
 }
 
 .analog-clock .clock-digits.digit-10 {
-    left: calc(9% - 0px);
+    left: 9%;
     top: 85px;
 }
 
 .analog-clock .clock-digits.digit-9 {
-    left: 10px;
+    left: 5px;
     top: calc(50% - 25px);
 }
 
 .analog-clock .clock-digits.digit-8 {
-    left: calc(9% - 0px);
+    left: 9%;
     bottom: 85px;
 }
 
 .analog-clock .clock-digits.digit-7 {
-    left: calc(27% - 6px);
-    bottom: 25px;
+    left: calc(27% - 2px);
+    bottom: 20px;
 }
 
 .analog-clock .clock-digits.digit-6 {
@@ -114,28 +113,28 @@
 }
 
 .analog-clock .clock-digits.digit-5 {
-    right: calc(27% - 6px);
-    bottom: 25px;
+    right: calc(27% - 2px);
+    bottom: 20px;
 }
 
 .analog-clock .clock-digits.digit-4 {
-    right: calc(9% - 0px);
+    right: 9%;
     bottom: 85px;
 }
 
 .analog-clock .clock-digits.digit-3 {
-    right: 10px;
+    right: 5px;
     top: calc(50% - 25px);
 }
 
 .analog-clock .clock-digits.digit-2 {
-    right: calc(9% - 0px);
+    right: 9%;
     top: 85px;
 }
 
 .analog-clock .clock-digits.digit-1 {
-    right: calc(27% - 6px);
-    top: 25px;
+    right: calc(27% - 2px);
+    top: 20px;
 }
 /**
 | position clock digits END

@@ -24,6 +24,7 @@ function setAnalogClockHands() {
     let hours = date.getHours(),
         minutes = date.getMinutes(),
         seconds = date.getSeconds();
+    let amOrPm = hours > 12 ? 'PM' : 'AM';
     let hoursDegreeAngle = hours * hoursAngleMultiple + // multiply hours with angle e.g. 6=30=180 at digit 6
         (minutes * 30 / 60) + // add 0.5degree for every minute
         clockHandsInitialDegree;
@@ -49,7 +50,7 @@ function setAnalogClockHands() {
     document.querySelector('.digital-clock-wrapper .hours').textContent = hours;
     document.querySelector('.digital-clock-wrapper .minutes').textContent = minutes;
     document.querySelector('.digital-clock-wrapper .seconds').textContent = seconds < 10 ? 0 +''+ seconds : seconds;
-    document.querySelector('.digital-clock-wrapper .am-pm').textContent = hours > 12 ? 'PM' : 'AM';
+    document.querySelector('.digital-clock-wrapper .am-pm').textContent = amOrPm;
 
     document.querySelector('.digital-clock-wrapper .date')
         .textContent = `${date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear()}`
